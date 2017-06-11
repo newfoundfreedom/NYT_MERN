@@ -9,7 +9,7 @@ const Main = React.createClass({
     // Render it when called on byt app.js
     render: function () {
         return (
-            <div> /* Containing Div */
+            <div>
 
                 <div className="row">
                     <div className="jumbotron text-center">
@@ -31,9 +31,9 @@ const Main = React.createClass({
                     <Articles/>
                 </div>
 
-            </div> /* close Containing Div */
+            </div>
         )
-    } /* close render method */
+    }
 });
 
 // Export the component back for use in other files
