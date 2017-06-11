@@ -9,10 +9,12 @@ const Main = React.createClass({
     // Render it when called on byt app.js
     render: function () {
         return (
-            <div>
+            <div> /* Containing Div */
+
                 <div className="row">
                     <div className="jumbotron text-center">
-                        <h1>New York Times Article Scrubber</h1>
+                        <h1><span className="fa fa-newspaper-o"></span>&nbsp;
+                            New York Times Article Scrubber</h1>
                         <h2>Search for and annotate articles of interest!</h2>
                     </div>
                 </div>
@@ -29,9 +31,9 @@ const Main = React.createClass({
                     <Articles/>
                 </div>
 
-            </div>
+            </div> /* close Containing Div */
         )
-    }
+    } /* close render method */
 });
 
 // Export the component back for use in other files
