@@ -1,6 +1,6 @@
 module.exports = {
 
-  // This is the entry point or start of our react applicaton
+  // This is the entry point or start of our react application
   entry: "./app/app.js",
 
   // The plain compiled JavaScript will be output into this file
@@ -12,12 +12,12 @@ module.exports = {
   module: {
     loaders: [
       {
-        // Only working with files that in in a .js or .jsx extension
+        // Only working with files that end in a .js or .jsx extension
         test: /\.jsx?$/,
         // Webpack will only process files in our app folder. This avoids processing
         // node modules and server files unnecessarily
         include: /app/,
-        loader: "babel",
+        loader: "babel-loader",
         query: {
           // These are the specific transformations we'll be using.
           presets: ["react", "es2015"]
