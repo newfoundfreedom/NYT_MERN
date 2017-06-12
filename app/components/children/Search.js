@@ -16,7 +16,7 @@ const Search = React.createClass({
     },
 
     // This function will respond to the user input
-    handleChange: function(event) {
+    handleChange: function (event) {
         console.log('event', event);
         let newState = {};
         newState[event.target.id] = event.target.value;
@@ -67,8 +67,16 @@ const Search = React.createClass({
                                     />
                                 </div>
 
-                                <button type="submit" className="btn btn-default" id="run-search"><span className="fa fa-search"/> Search</button>
-                                <button type="button" className="btn btn-default" id="clear-all"><span className="fa fa-trash"/> Clear Results</button>
+                                <button type="submit"
+                                        className="btn btn-default"
+                                        id="run-search"><span
+                                    className="fa fa-search"/> Search
+                                </button>
+                                <button type="button"
+                                        className="btn btn-default"
+                                        id="clear-all"><span
+                                    className="fa fa-trash"/> Clear Results
+                                </button>
 
                             </form>
 
@@ -76,7 +84,6 @@ const Search = React.createClass({
                     </div>
                 </div>
             </div>
-
         )
     }
 });

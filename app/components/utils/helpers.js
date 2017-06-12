@@ -2,8 +2,25 @@
 const axios = require("axios");
 
 // NYT API
-var authKey = "b9f91d369ff59547cd47b931d8cbc56b:0:74623931";
+const authKey = "b9f91d369ff59547cd47b931d8cbc56b:0:74623931";
 // var geocodeAPI = "35e5548c618555b1a43eb4759d26b260";
+
+
+// These variables will hold the results we get from the user's inputs via HTML
+// var searchTerm = "";
+// var numResults = 0;
+// var startYear = 0;
+// var endYear = 0;
+
+// queryURLBase is the start of our API endpoint. The searchTerm will be appended to this when
+// the user hits the search button
+let queryURLBase = `https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=${authKey}&q=`;
+
+// Counter to keep track of article numbers as they come in
+// var articleCounter = 0;
+
+
+
 
 // Helper functions for making API Calls
 var helper = {
